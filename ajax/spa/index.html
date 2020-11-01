@@ -45,13 +45,13 @@ function navegarViaAjax(url, seletor, push = true) {
 
             link.onclick = e => {
                 e.preventDefault();
-                navegarViaAjax(url, seletor);
+                navegarViaAjax(url, seletor)
             }
         });
 
         window.onpopstate = e => {
             if(e.state) {
-                navegarViaAjax(window.location.href, e.state.seletor, false);
+                navegarViaAjax(window.location.href, e.state.seletor, false)
             }
         }
     </script>
